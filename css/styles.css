@@ -29,7 +29,8 @@ body {
     text-decoration: none;
     color: #eee;
     transition: color 0.3s ease;
-    font-family: monospace;
+    font-family: monospace;font-size: 20px;
+
 }
 
 #nav a:hover {
