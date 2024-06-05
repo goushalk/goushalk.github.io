@@ -4,7 +4,7 @@ body {
     font-family: 'Audiowide', cursive; /*  Font choice */
     margin: 0;
     overflow-x: hidden; /* Prevent horizontal scroll */
-    background-image: url(/images/back.png);
+    background-image: url(/images/blur1.png);
 }
 
 /* Navigation */
@@ -29,6 +29,7 @@ body {
     text-decoration: none;
     color: #eee;
     transition: color 0.3s ease;
+    font-family: monospace;
 }
 
 #nav a:hover {
@@ -39,6 +40,7 @@ body {
     font-size: 2.5em;
     margin: 0;
     text-shadow: 0 0 5px lime; /* Green text shadow */
+    font-family: monospace;
 }
 
 /* Sections */
@@ -47,11 +49,12 @@ section {
     margin: 20px;
     background-color: #333; /* Darker background for sections */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgb(255, 60, 0); /* Green box shadow */
+    box-shadow: 0 0 10px rgb(103, 101, 101); /* Green box shadow */
 }
 
 section h2 {
     margin-top: 0;
+    font-family: sans-serif;
 }
 
 section p {
