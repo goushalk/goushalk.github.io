@@ -41,7 +41,7 @@ body {
     font-size: 2.5em;
     margin: 0;
     text-shadow: 0 0 5px lime; /* Green text shadow */
-    font-family: monospace;
+    font-family: monospace; 
 }
 
 /* Sections */
@@ -56,10 +56,12 @@ section {
 section h2 {
     margin-top: 0;
     font-family: sans-serif;
+    
 }
 
 section p {
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 /* Footer */
