@@ -4,7 +4,7 @@ body {
     font-family: 'Audiowide', cursive; /*  Font choice */
     margin: 0;
     overflow-x: hidden; /* Prevent horizontal scroll */
-    background-image: url(/blog/images/back.png);
+    background-image: url(back.png);
 }
 
 /* Navigation */
