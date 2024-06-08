@@ -1,0 +1,18 @@
+body {
+    color: #eee; /* Light text color */
+    font-family: 'Audiowide', cursive; /*  Font choice */
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-image: url(/images/blur1.png);
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    border-color: lime;
+    box-shadow: 0 0 10px lime;;
+}
+
+
