@@ -12,7 +12,19 @@ section{
     background-color: #333;
     border-radius: 10px;
     border-color: lime;
-    box-shadow: 0 0 10px lime;;
+    box-shadow: 0 0 10px lime;
 }
+
+section p{
+    font-family: monospace;
+    color: #eee;
+}
+
+section p a{
+    color: #eee;
+    font-family: monospace;
+}
+
+
 
 
