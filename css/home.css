@@ -25,6 +25,23 @@ section p a{
     font-family: monospace;
 }
 
+header .block {
+    margin: 100px auto 0;
+    width: 100px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between
+}
 
+header a.home {
+    width: 100px;
+    height: 80px;
+    background: #2a394e;
+    -webkit-mask: url(/images/icon.png) center no-repeat;
+    mask: url(/images/icon.png) center no-repeat;
+    -webkit-mask-size: 100% auto;
+    mask-size: 100% auto;
+    transition: 2ms;
+}
 
 
