@@ -9,39 +9,55 @@ body {
 section{
     padding: 20px;
     margin: 20px;
-    background-color: #333;
+    background-color: transparent;
     border-radius: 10px;
-    border-color: lime;
-    box-shadow: 0 0 10px lime;
 }
 
 section p{
     font-family: monospace;
     color: #eee;
+    text-align: center;
+    font-size: 200%;
 }
 
 section p a{
-    color: #eee;
+    color: lime;
     font-family: monospace;
+    text-decoration: none;
 }
 
-header .block {
-    margin: 100px auto 0;
-    width: 100px;
-    display: flex;
-    align-items: top;
-    justify-content: space-between
+.nav {
+    margin: 10px;
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .nav * {
+    box-sizing: border-box;
+  }
+  
+  .nav li {
+    list-style: outside none none;
+  }
+  
+  .nav a {
+    padding: .5em .8em;
+    position: relative;
+    color: #eee;
+    text-decoration: none;
+    font-family: monospace;
+    text-shadow:lime;
+    font-size: 250%;
+  }
+  
+
+
+  .nav a:hover {
+    color: #0f0;
+  }
+
+.bn_exp{
+  box-sizing: 10px;
 }
-
-header a.home {
-    width: 100px;
-    height: 80px;
-    background: #2a394e;
-    -webkit-mask: url(/images/icon.png) center no-repeat;
-    mask: url(/images/icon.png) center no-repeat;
-    -webkit-mask-size: 100% auto;
-    mask-size: 100% auto;
-    transition: 2ms;
-}
-
-
