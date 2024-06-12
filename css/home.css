@@ -58,6 +58,27 @@ section p a{
     color: #0f0;
   }
 
-.bn_exp{
-  box-sizing: 10px;
+#explore a{
+  padding: 25px 30px;
+  background-color: #050801;
+  color: lime;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  text-decoration: none ;
+  font-family: monospace;
+}
+
+#explore a:hover{
+    background: lime;
+    color: #050801;
+    box-shadow: 0 0 5px lime,
+                0 0 25px lime,
+                0 0 50px lime,
+                0 0 200px lime;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
