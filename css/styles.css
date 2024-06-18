@@ -43,6 +43,7 @@ body {
     margin: 0;
     text-shadow: 0 0 5px lime; /* Green text shadow */
     font-family: monospace; 
+    padding-top: 20px;
 }
 
 /* Sections */
