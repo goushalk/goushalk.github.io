@@ -1,0 +1,17 @@
+body{
+    background-image: url(/images/blur1.png);
+    overflow-x: hidden;
+    font-family: 'Autowide', monospace;    
+}
+
+#contact{
+
+    text-align: center;
+    padding-top: 60px;
+    color: lime;
+    text-transform:uppercase;
+    font-size: 30px;
+}
+
+
+
