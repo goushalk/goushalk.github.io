@@ -60,6 +60,7 @@ section p a{
 
 #explore a{
   padding: 25px 30px;
+  padding-top: 20px;
   background-color: #050801;
   color: lime;
   font-weight: bold;
@@ -81,4 +82,49 @@ section p a{
                 0 0 50px lime,
                 0 0 200px lime;
      -webkit-box-reflect:below 1px linear-gradient(transparent, lime);
+}
+
+#foot{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(23, 23, 23);
+   text-align: center;
+   padding: 10px;
+}
+
+.fa  {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 50px;
+  font-size: 700px;
+  right: 50%;
+  
+}
+
+.fa:hover{
+  color: lime;
+}
+
+.fa-instagram{
+  padding: 10px;
+  background-color: black;
+  border-radius: 50%;
+  width:20px;
+}
+
+.fa-github{
+  padding: 10px;
+  background-color: black;
+  border-radius: 50%;
+  width:20px;
+}
+
+.fa-linkedin{
+  padding: 10px;
+  background-color: black;
+  border-radius: 50%;
+  width:20px;
 }
