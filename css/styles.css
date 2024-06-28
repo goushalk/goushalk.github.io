@@ -68,20 +68,10 @@ section p {
     
 }
 
-/* Footer */
-footer {
-    padding: 10px;
-    text-align: center;
-    position: fixed; /* Fix the footer to the bottom */
-    bottom: 0;
-    width: 100%;
+footer{
+  text-align: center;
+  font-family: monospace;
 }
-
-footer p {
-    margin: 0;
-    font-family: monospace;
-}
-
 .nav {
     margin: 10px;
     font-family: 'Titillium Web';
@@ -141,4 +131,14 @@ footer p {
     color: #0f0;
   }
 
-  
+  .fa{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+  .fa:hover{
+    color: #0f0;
+    font-size: 20px;
+    transition: 10ms;
+    animation: forwards;
+  }
