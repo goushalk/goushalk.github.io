@@ -1,0 +1,30 @@
+body{
+    background: url(/images/blur1.png);
+    background-size: contain;
+}
+
+h2{
+    color: lime;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+img{
+    padding-left: 250px;
+}
+
+p{
+    color: lime ;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+section {
+    padding: 5px;
+    margin: 30px;
+    background-color: #333; /* Darker background for sections */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(103, 101, 101); /* Green box shadow */
+}
+
