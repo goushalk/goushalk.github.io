@@ -1,7 +1,5 @@
 body{
-    /*background: url(/images/blur1.png);*/
-    background-color: black;
-    background-size: contain;
+    background: url(/images/blur1.png);
 }
 
 h2{
@@ -13,6 +11,8 @@ h2{
 
 img{
     padding-left: 250px;
+    width: 1000;
+    height: 600;
 }
 
 p{
@@ -24,8 +24,21 @@ p{
 section {
     padding: 5px;
     margin: 30px;
-    background-color: #333; /* Darker background for sections */
+    background-color: #333;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgb(103, 101, 101); /* Green box shadow */
+    box-shadow: 0 0 10px rgb(103, 101, 101); 
 }
 
+/* for mobiles of width px */
+
+@media (max-width: 430px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    .certs{
+        height: 200px;
+        width: 300px;
+        padding-left: 50px !important;
+    }
+}
