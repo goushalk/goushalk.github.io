@@ -42,47 +42,10 @@ section p a{
     list-style: outside none none;
   }
   
-  .nav a {
-    padding: .5em .8em;
-    position: relative;
-    color: #eee;
-    text-decoration: none;
-    font-family: monospace;
-    text-shadow: 0 0 10px black;
-    font-size: 250%;
-  }
-  
-
-
-  .nav a:hover {
-    color: #0f0;
-  }
-
-#explore a{
-  padding: 25px 30px;
-  padding-top: 20px;
-  background-color: #050801;
-  color: lime;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  letter-spacing: 4px;
-  overflow: hidden;
-  transition: 0.5s;
-  cursor: pointer;
-  text-decoration: none ;
-  font-family: monospace;
-}
-
-#explore a:hover{
-    background: lime;
-    color: #050801;
-    box-shadow: 0 0 5px lime,
-                0 0 25px lime,
-                0 0 50px lime,
-                0 0 200px lime;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, lime);
-}
+  #name {
+      color: lime;
+      padding-top: 50px;
+    }
 
 #foot{
   position: fixed;
