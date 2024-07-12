@@ -1,93 +1,74 @@
-body {
-    color: #eee; /* Light text color */
-    font-family: 'Audiowide', cursive; /*  Font choice */
-    margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    background-image: url(/images/blur1.png);
+body{
+  margin: 0%;
+  padding: 0%;
 }
 
-section{
-    padding: 20px;
-    margin: 20px;
-    background-color: transparent;
-    border-radius: 10px;
+#container{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-section p{
-    font-family: monospace;
-    color: #eee;
-    text-align: center;
-    font-size: 200%;
+
+#left-side , #right-side{
+  width: 60%;
 }
 
-section p a{
-    color: lime;
-    font-family: monospace;
-    text-decoration: none;
+#left-side{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
 }
 
-.nav {
-    margin: 10px;
-    font-family: 'Titillium Web';
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-  }
-  
-  .nav * {
-    box-sizing: border-box;
-  }
-  
-  .nav li {
-    list-style: outside none none;
-  }
-  
-  #name {
-      color: lime;
-      padding-top: 50px;
-    }
-
-#foot{
-  position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: rgb(23, 23, 23);
-   text-align: center;
-   padding: 10px;
-}
-
-.fa  {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  width: 50px;
-  font-size: 700px;
-  right: 50%;
-  
-}
-
-.fa:hover{
+#left-side h1{
+  font-weight: bolder;
+  font-size: 50px;
+  font-family: bionical;
   color: lime;
 }
 
-.fa-instagram{
-  padding: 10px;
-  background-color: black;
-  border-radius: 50%;
-  width:20px;
+  
+
+#right-side{
+  padding: 100px;
+  background-color: rgb(95, 95, 95);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.fa-github{
-  padding: 10px;
-  background-color: black;
-  border-radius: 50%;
-  width:20px;
+
+#right-side p{
+  color: black;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
 }
 
-.fa-linkedin{
-  padding: 10px;
-  background-color: black;
-  border-radius: 50%;
-  width:20px;
+#right-side a{
+  text-decoration: none;
+  color: lime;
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: bionical;
+  src: url(/fonts/BionicalDemo-8MJ5A.ttf);
+}
+
+@font-face{
+  font-family: lines;
+  src: url(/fonts/Exwayer-X3eqa.ttf);
+}
+
+@font-face{
+  font-family: glitch;
+  src: url(/fonts/GlitchGoblin-2O87v.ttf);
 }
