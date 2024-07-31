@@ -4,8 +4,7 @@ body {
     font-family: 'Audiowide', cursive; /*  Font choice */
     margin: 0;
     overflow-x: hidden; /* Prevent horizontal scroll */
-    background-image: url(/images/blur1.png);
-    background-attachment: fixed;
+    background-color: #303030;
 }
 
 /* Navigation */
@@ -60,12 +59,16 @@ section h2 {
     margin-top: 0;
     font-family: monospace;
     font-size: 40px;
+    color: rgb(204, 213, 204);
+    text-shadow: rgb(89, 255, 89) 1px 1px 4px;
     
 }
 
 section p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
+    /* color: rgb(117, 255, 117); */
+    text-shadow: #0f0 1px 2px 4px;
     
 }
 
