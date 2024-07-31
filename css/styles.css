@@ -142,3 +142,8 @@ footer{
     transition: 10ms;
     animation: forwards;
   }
+
+
+  .footer{
+    padding-top: 211px;
+  }

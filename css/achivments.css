@@ -1,5 +1,6 @@
 body{
     background: url(/images/blur1.png);
+    background-attachment: fixed;
 }
 
 h2{
@@ -27,6 +28,11 @@ section {
     background-color: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(103, 101, 101); 
+}
+
+#texus{
+    height: 600px;
+    width: 1000px;
 }
 
 /* for mobiles of width px */

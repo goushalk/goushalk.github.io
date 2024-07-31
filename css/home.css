@@ -17,7 +17,7 @@ body{
 }
 
 #left-side{
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   height: 100%;
   width: 100%;
   display: flex;
@@ -26,18 +26,52 @@ body{
   font-family: monospace;
 }
 
-#left-side h1{
+#left-side a{
   font-weight: bolder;
   font-size: 50px;
   font-family: bionical;
   color: lime;
+  text-decoration: none;
 }
 
-  
+.flash{
+  -webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+/* Pulse class and keyframe animation */
+.pulseit{
+	-webkit-animation: pulse linear .5s infinite;
+	animation: pulse linear .5s infinite;
+}
+@-webkit-keyframes pulse {
+	0% { width:200px; } 
+	50% { width:340px; } 
+	100% { width:200px; }
+}
+@keyframes pulse {
+	0% { width:200px; } 
+	50% { width:340px; } 
+	100% { width:200px; }
+}
+
+#left-side a:hover{
+  color: black;
+}
 
 #right-side{
   padding: 100px;
-  background-color: rgb(95, 95, 95);
+  background-color: rgb(88, 88, 88);
   height: 100%;
   display: flex;
   align-items: center;
@@ -46,17 +80,19 @@ body{
 
 
 #right-side p{
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-family: monospace;
   font-weight: bold;
 }
 
 #right-side a{
-  text-decoration: none;
   color: lime;
+  text-decoration: none;
   font-weight: bolder;
 }
+
+
 
 @font-face {
   font-family: bionical;
@@ -72,3 +108,4 @@ body{
   font-family: glitch;
   src: url(/fonts/GlitchGoblin-2O87v.ttf);
 }
+
