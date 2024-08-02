@@ -27,7 +27,7 @@ body {
 #left-side a {
     font-weight: bolder;
     font-size: 50px;
-    font-family: bionical;
+    font-family: android;
     color: lime;
     text-decoration: none;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 #left-side a:hover {
-    color: black;
+    color: rgb(243, 244, 245);
 }
 
 #right-side {
@@ -103,6 +103,11 @@ body {
 @font-face {
     font-family: glitch;
     src: url(/fonts/GlitchGoblin-2O87v.ttf);
+}
+
+@font-face {
+    font-family: android;
+    src: url(/fonts/Android.ttf);
 }
 
 /* Responsive Styles */
