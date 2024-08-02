@@ -1,153 +1,146 @@
 /* General Styles */
 body {
-    color: #eee; /* Light text color */
-    font-family: 'Audiowide', cursive; /*  Font choice */
-    margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    background-color: #303030;
+  color: #eee;
+  font-family: 'Audiowide', cursive;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #303030;
 }
 
 /* Navigation */
 #nav {
-    padding: 15px 20px;
-    text-align: center;
-    position: relative; /* To position the SVG */
+  padding: 15px 20px;
+  text-align: center;
+  position: relative;
 }
 
-#nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#nav .navbar-nav .nav-item .nav-link {
+  color: #eee;
+  transition: color 0.3s ease;
+  font-family: monospace;
+  font-size: 1.2em;
+  
 }
 
-#nav li {
-    display: inline-block;
-    margin: 0 10px;
+#nav .navbar-nav .nav-item .nav-link:hover {
+  color: #0f0;
 }
 
-#nav a {
-    text-decoration: none;
-    color: #eee;
-    transition: color 0.3s ease;
-    font-family: monospace;
-    font-size: 2em;
-
+#nav .navbar-brand {
+  font-size: 2em;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+  font-family: monospace;
+  color: #eee;
 }
 
-#nav a:hover {
-    color: #0f0; /* Green hover effect */
+#nav .navbar-brand:hover {
+  color: #0f0;
+  
 }
 
-#nav h1 {
-    font-size: 3em;
-    margin: 0;
-    text-shadow: 0 0 5px lime; /* Green text shadow */
-    font-family: monospace; 
-    padding-top: 20px;
-}
+
+
 
 /* Sections */
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #333; /* Darker background for sections */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(103, 101, 101); /* Green box shadow */
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(103, 101, 101);
 }
 
 section h2 {
-    margin-top: 0;
-    font-family: monospace;
-    font-size: 40px;
-    color: rgb(204, 213, 204);
-    text-shadow: rgb(89, 255, 89) 1px 1px 4px;
-    
+  margin-top: 0;
+  font-family: monospace;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  text-shadow: #0f0 0px 0px 1px;
 }
 
 section p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    /* color: rgb(117, 255, 117); */
-    text-shadow: #0f0 1px 2px 4px;
-    
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  text-shadow: #0f0 0px 0px 1px;
 }
 
-footer{
+/* Footer */
+.footer {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer .fa {
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+.footer .fa:hover {
+  color: #0f0;
+  font-size: 2em;
+  transition: 0.2s;
+}
+
+footer {
   text-align: center;
   font-family: monospace;
+  padding: 10px 0;
 }
-.nav {
-    margin: 10px;
-    font-family: 'Titillium Web';
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-  }
-  
-  .nav * {
-    box-sizing: border-box;
-  }
-  
-  .nav li {
-    list-style: outside none none;
-  }
-  
-  .nav a {
-    padding: .5em .8em;
-    position: relative;
-  }
-  
-  .nav a::before,
-  .nav a::after {
-    content: '';
-    height: 14px;
-    width: 14px;
-    position: absolute;
-    transition: all .35s ease;
-    opacity: 0;
-  }
-  
-  .nav a::before {
-    content: '';
-    right: 0;
-    top: 0;
-    border-top: 3px solid #0f0;;
-    border-right: 3px solid #0f0;;
-    transform: translate(-100%, 50%);
-  }
-  
-  .nav a:after {
-    content: '';
-    left: 0;
-    bottom: 0;
-    border-bottom: 3px solid #0f0;
-    border-left: 3px solid #0f0;
-    transform: translate(100%, -50%)
-  }
-  
-  .nav a:hover:before,
-  .nav a:hover:after{
-    transform: translate(0,0);
-    opacity: 1;
-  }
-  
-  .nav a:hover {
-    color: #0f0;
-  }
 
-  .fa{
-    text-decoration: none;
-    color: whitesmoke;
-  }
+@font-face {
+  font-family: android;
+  src: url(/fonts/Android.ttf);
+ }
+ 
+ @font-face{
+  font-family: digital;
+  src: url(/fonts/digitative-1023.ttf);
+ }
 
-  .fa:hover{
-    color: #0f0;
-    font-size: 20px;
-    transition: 10ms;
-    animation: forwards;
-  }
+ @font-face {
+  font-family: syn;
+  src: url(/fonts/Syntachron-Bold.ttf);
+ }
+
+ @font-face {
+  font-family: bionical;
+  src: url(/fonts/BionicalDemo-8MJ5A.ttf);
+}
+
+@font-face {
+  font-family: lines;
+  src: url(/fonts/Exwayer-X3eqa.ttf);
+}
+
+@font-face {
+  font-family: glitch;
+  src: url(/fonts/GlitchGoblin-2O87v.ttf);
+}
 
 
-  .footer{
-    padding-top: 211px;
+/* Media Queries */
+@media (max-width: 768px) {
+  #nav .navbar-brand {
+      font-size: 1.5em;
   }
+
+  #nav .navbar-nav .nav-item .nav-link {
+      font-size: 1em;
+  }
+
+  section h2 {
+      font-size: 1.5em;
+  }
+
+  section p {
+      font-size: 1em;
+  }
+
+  .footer .fa {
+      font-size: 1.2em;
+  }
+
+ 
+}

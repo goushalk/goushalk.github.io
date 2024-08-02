@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="x-icon" href="/images/icon.png">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>codemystiqe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>codemystiqe.sh</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
-    
 </head>
 <body>
-    <header id="nav">
-        <nav>
-            <ul class="nav">
-                <li><a href="/html/home.html">About</a></li>
-                <li><a href="/html/projects.html">Projects</a></li>
-                <li><a href="/html/achivements.html">Achievements & Participation</a></li>
-            </ul>
+    <header id="nav" class="container-fluid text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="/html/home.html" style="font-family: android;">codemystqe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item"><a class="nav-link" href="/html/home.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/achivements.html">Certifications</a></li>
+                </ul>
+            </div>
         </nav>
-            <h1 class="text-center">./codemystqe.sh</h1>            
     </header>
-    <section id="about">
+    <section id="about" class="container">
         <h2>~$ whoami</h2>
-        <p class="text-center">Hey there!<br>
-            I am Goushal a.k.a (codemystiqe) a sophomore at Sathyabama institute of science and technology<br>
-            My interests is in web exploitation and Digital Forensic. I participate in CTF's with binary misfits.<br>
-            I'm interested in python and web security.
+        <p >
+            Hey there!<br>
+            I am Goushal a.k.a (codemystiqe) a sophomore at Sathyabama institute of science and technology.<br>
+            My interests are in web exploitation and Digital Forensics. I participate in CTFs with Binary Misfits.
+            I'm interested in Python and web security.
         </p>
     </section>
-    <section id="myteam">
-        <h2>~$ ./my_team.sh </h2>
-        <p> 
-            Meet the Binary Misfits: a motley crew of six cyber-savvy rebels on a mission to <br>
-            dominate the electrifying world of Capture The Flag (CTF) competitions. <br>
-            Born out of a shared love for hacking challenges and a refusal to play by the rules, <br>
-            this squad is all about blending binary brilliance with a healthy dose of mischief. <br>
+    <section id="myteam" class="container">
+        <h2>~$ ./my_team.sh</h2>
+        <p>
+            Meet the Binary Misfits: a motley crew of six cyber-savvy rebels on a mission to dominate the electrifying world of Capture The Flag (CTF) competitions.<br>
+            Born out of a shared love for hacking challenges and a refusal to play by the rules, this squad is all about blending binary brilliance with a healthy dose of mischief.
         </p>
     </section>
-    <div class="footer container">
-        <center>
-            <a href="https://www.instagram.com/kgoushal" class="fa fa-instagram" ></a>
-            <a href="https://www.linkedin.com/in/goushal-k-590941279" class="fa fa-linkedin" ></a>
-            <a href="https://github.com/goushalk" class="fa fa-github" ></a>
-        </center>
+    <div class="footer container text-center">
+        <a href="https://www.instagram.com/kgoushal" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/goushal-k-590941279" class="fa fa-linkedin"></a>
+        <a href="https://github.com/goushalk" class="fa fa-github"></a>
     </div>
-    <footer>
+    <footer class="text-center">
         <p>&copy; 2023 codemystiqe</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
