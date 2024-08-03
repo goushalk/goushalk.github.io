@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTF Write-ups</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/writeup.css">
+</head>
+<body>
+  <header class="bg-dark text-lime text-center py-4">
+    <header id="nav" class="container-fluid text-center">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="/html/home.html" style="font-family: android;">codemystqe</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item"><a class="nav-link" href="/html/home.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/html/projects.html">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/html/achivements.html">Certifications</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Writeups</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+
+  <div class="container mt-5">
+    <!-- <section id="writeups-list">
+      <h2 class="text-white">Recent Write-ups</h2>
+      <ul class="list-unstyled">
+        <li class="my-3">
+          <a href="#writeup1" class="text-lime">CTF Event Name - Challenge Name</a>
+          <p class="text-white">Brief description or teaser of the write-up.</p>
+        </li>
+        <li class="my-3">
+          <a href="#writeup2" class="text-lime">CTF Event Name - Challenge Name</a>
+          <p class="text-white">Brief description or teaser of the write-up.</p>
+        </li>
+         Add more write-ups as needed 
+      </ul> -->
+    </section>
+
+    <section id="writeup1" class="mt-5" style="text-align: left;">
+      <h2 class="text-lime">Event: OWASP x Horizon </h2>
+      <h2 class="text-lime">Category: Forensic </h2>
+      <h2 class="text-lime">Challenge: corrupted</h2>
+      <h3 class="text-lime">Challenge Description:</h3>
+      <p class="text-white">Alice send the image to Bob but the image is corrupted, recover original image and find the flag from the image. <br>
+        Author - DIVAS</p>
+      <h3 class="text-lime">Solution:</h3>
+      <img src="/ctf_img/Screenshot from 2024-08-03 17-05-08.png" alt="">
+      <p class="text-white">This challenge is very easy, before getting into any steg tool I used <strong>strings</strong> to extract any string that had <strong>horizon in it</strong> and <strong>greped it</strong>. <br>
+      So that I can get the flag cuz the format of the flag is horizonCTF{} </p>
+    </section>
+
+    <section id="writeup1" class="mt-5" style="text-align: left;">
+      <h2 class="text-lime">Category: Forensic </h2>
+      <h2 class="text-lime">Challenge: education</h2>
+      <h3 class="text-lime">Challenge Description:</h3>
+      <p class="text-white">study well and find the flag. go advance <br>
+        Author: Goushal</p>
+        <img src="/ctf_img/saaaaaa.bmp" alt="" id="saaa">
+      <h3 class="text-lime">Solution:</h3>
+      <!-- <img src="/ctf_img/Screenshot from 2024-08-03 17-05-08.png" alt=""> -->
+      <p class="text-white">its a bmp file I went through all the methods</p>
+    </section>
+  </div> 
+
+  <footer class=" text-lime text-center py-3 mt-5">
+    <p>© 2024 codemystqe</p>
+    
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
