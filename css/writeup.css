@@ -1,108 +1,106 @@
 body {
     background-color: #121212;
     color: #ffffff;
-  }
-  
-  .text-lime {
+}
+
+.text-lime {
     color: #00ff00;
-  }
-  
-  .bg-dark {
+}
+
+.bg-dark {
     background-color: #1e1e1e !important;
-  }
-  
-  .btn-lime {
+}
+
+.btn-lime {
     background-color: #00ff00;
     color: #121212;
-  }
-  
-  a {
-    color: #00ff00;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  footer a {
-    color: #00ff00;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
+}
 
-  
-  .text-white{
-    font-size: 2em;
-  }
+a {
+    color: #00ff00;
+}
 
-  strong{
+a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: #00ff00;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.text-white {
+    font-size: 1.2em;
+}
+
+strong {
     color: red;
-  }
+}
 
-  #saaa{
-    height: 600px;
-    width: 600px;    
-  }
+#saaa {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
 /* navigation */
-  #nav {
+#nav {
     padding: 15px 20px;
     text-align: center;
     position: relative;
-  }
-  
-  #nav .navbar-nav .nav-item .nav-link {
+}
+
+#nav .navbar-nav .nav-item .nav-link {
     color: #eee;
     transition: color 0.3s ease;
     font-family: monospace;
     font-size: 1.2em;
-    
-  }
-  
-  #nav .navbar-nav .nav-item .nav-link:hover {
+}
+
+#nav .navbar-nav .nav-item .nav-link:hover {
     color: #0f0;
-  }
-  
-  #nav .navbar-brand {
+}
+
+#nav .navbar-brand {
     font-size: 2em;
     text-shadow: 0 0 5px rgb(255, 255, 255);
     font-family: monospace;
     color: #eee;
-  }
-  
-  #nav .navbar-brand:hover {
-    color: #0f0;
-    
-  }
+}
 
-  @font-face {
+#nav .navbar-brand:hover {
+    color: #0f0;
+}
+
+@font-face {
     font-family: android;
     src: url(/fonts/Android.ttf);
-   }
-   
-   @font-face{
+}
+
+@font-face {
     font-family: digital;
     src: url(/fonts/digitative-1023.ttf);
-   }
-  
-   @font-face {
+}
+
+@font-face {
     font-family: syn;
     src: url(/fonts/Syntachron-Bold.ttf);
-   }
-  
-   @font-face {
+}
+
+@font-face {
     font-family: bionical;
     src: url(/fonts/BionicalDemo-8MJ5A.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: lines;
     src: url(/fonts/Exwayer-X3eqa.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: glitch;
     src: url(/fonts/GlitchGoblin-2O87v.ttf);
-  }
-  
+}
