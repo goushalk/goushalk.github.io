@@ -4,7 +4,7 @@ body {
   font-family: 'Audiowide', cursive;
   margin: 0;
   overflow-x: hidden;
-  background-color: #303030;
+  background-color: #1e1e1e;
 }
 
 /* Navigation */
@@ -38,6 +38,9 @@ body {
   
 }
 
+#nav{
+  font-size: 1.5em;
+}
 
 
 
@@ -75,12 +78,13 @@ section p {
   color: whitesmoke;
   margin: 0 10px;
   font-size: 1.5em;
-}
+  filter:drop-shadow(0px 0px 5px rgb(245, 244, 244))}
 
 .footer .fa:hover {
   color: #0f0;
   font-size: 2em;
   transition: 0.2s;
+  filter:drop-shadow(0px 0px 5px #0f0)
 }
 
 footer {
@@ -119,6 +123,10 @@ footer {
   src: url(/fonts/GlitchGoblin-2O87v.ttf);
 }
 
+
+/* .fa-instagram{
+  color: red;
+} */
 
 /* Media Queries */
 @media (max-width: 768px) {
