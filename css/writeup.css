@@ -55,13 +55,14 @@ strong {
     padding: 15px 20px;
     text-align: center;
     position: relative;
+    background-color: #121212;
 }
 
 #nav .navbar-nav .nav-item .nav-link {
     color: #eee;
     transition: color 0.3s ease;
     font-family: monospace;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #nav .navbar-nav .nav-item .nav-link:hover {
@@ -79,11 +80,6 @@ strong {
     color: #0f0;
 }
 
-#nav{
-    /* font-size: 1.5em; */
-    background-color: #121212;
-    top: 0px;
-}
 
 @font-face {
     font-family: android;

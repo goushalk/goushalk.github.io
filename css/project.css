@@ -17,7 +17,7 @@ body {
     color: #eee;
     transition: color 0.3s ease;
     font-family: monospace;
-    font-size: 1.2em;
+    font-size: 1em;
     
   }
   
@@ -36,7 +36,6 @@ body {
     color: #0f0;
     
   }
-  
   /* #nav{
     font-size: 1.5em;
   }
