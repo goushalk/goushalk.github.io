@@ -52,6 +52,8 @@
       <p class="text-white">This challenge is very easy. Before getting into any steg tool, I used <strong>strings</strong> to extract any string that had <strong>horizon</strong> in it and <strong>grepped</strong> it so that I could get the flag because the format of the flag is horizonCTF{}.</p>
     </section>
 
+    <hr class="new1">
+
     <section id="writeup2" class="mt-5">
       <h2 class="text-lime">Category: Forensic</h2>
       <h2 class="text-lime">Challenge: education</h2>
@@ -61,7 +63,42 @@
       <h3 class="text-lime">Solution:</h3>
       <p class="text-white">It's a BMP file. I went through all the methods(basic) then I jumped to steg
         tool called <strong>openstego</strong> it is used for Data Hiding: It can hide any data within a cover file (e.g. images) and also for extracting
-        hidden messages <p>
+        hidden messages . After using the openstego tool there will file  called flag.txt if we read the file we will get the morse code <strong>.-  --. ..-.  --. .- .... 
+          --. ..--.-  .- .- -.. .- .- -..
+          </strong>  <p>
+            <img src="/ctf_img/morse code.png" alt="">
+    </section>
+
+    <hr class="new1">
+
+    <section id="writeup2" class="mt-5">
+      <h2 class="text-lime">Category: Forensic</h2>
+      <h2 class="text-lime">Challenge: Finding the Hidden Flag</h2>
+      <h3 class="text-lime">Challenge Description:</h3>
+      <p class="text-white">Analyze the provided pcap file to find the hidden encflag. The flag 
+        is encrypted with an XOR cipher and is located in a packet 
+        sent to port 12345. Decrypt the flag using the provided key and 
+        submit it in the format flag{...}.
+        Author- Abishek
+      <br>
+      Files: challenge.pcapng , decrypt.py
+</p>
+      <!-- <img src="/ctf_img/saaaaaa.bmp" alt="" id="saaa" class="img-fluid"> -->
+      <h3 class="text-lime">Solution:</h3>
+      <p class="text-white">
+        After opening the challenge.pcapng file using <a href="https://www.wireshark.org/" class="sec_a">wireshark</a> there was over 2000+ packets 
+        but still I went through few packets I got a fake flag <strong>flag{m6yb3_i_am_the_Fl4g}</strong>
+      <p>
+      <img src="/ctf_img/wireshark.png" alt="" style="height: 526px; width: 1062px;">
+      <p class="text-white">
+        In the description its given that they have encrypted it in XOR, in terminal I used <strong>strings challenge.pcapng | grep flag</strong>.After using the command I found something sus <strong>encflag{</strong> .
+        To get the raw data I built a Python tool called <a href="/files/packet_reader.py" class="packet_reader">packet_reader.py</a>.After extracting all the raw data I fon the encflag <strong>encflag{\n\x1a\x06/\x07\x0e\x1e\x0e:\t\x10\x14\x03/\x05\x0e\x02\x0e\x0b\n\x1a\x16}'</strong>
+        found the key in the same way <strong>key = suspcapkeyx</strong> use the decrypt.py to get the flag <strong>horizonCTF{you_done_pcap_forensic}</strong>
+      </p>
+      
+
+        
+        <img src="/ctf_img/flag fing the hidden flag.png" alt="">
     </section>
   </div>
 
