@@ -66,7 +66,7 @@
         hidden messages . After using the openstego tool there will file  called flag.txt if we read the file we will get the morse code <strong>.-  --. ..-.  --. .- .... 
           --. ..--.-  .- .- -.. .- .- -..
           </strong>  <p>
-            <img src="/ctf_img/morse code.png" alt="">
+            <img src="/ctf_img/morse code.png" class="img-fluid" alt="">
     </section>
 
     <hr class="new1">
@@ -89,16 +89,16 @@
         After opening the challenge.pcapng file using <a href="https://www.wireshark.org/" class="sec_a">wireshark</a> there was over 2000+ packets 
         but still I went through few packets I got a fake flag <strong>flag{m6yb3_i_am_the_Fl4g}</strong>
       <p>
-      <img src="/ctf_img/wireshark.png" alt="" style="height: 526px; width: 1062px;">
+      <img src="/ctf_img/wireshark.png" alt="" class="img-fluid" style="height: 526px; width: 1062px;">
       <p class="text-white">
-        In the description its given that they have encrypted it in XOR, in terminal I used <strong>strings challenge.pcapng | grep flag</strong>.After using the command I found something sus <strong>encflag{</strong> .
+        In the description its given that they have encrypted it in XOR in terminal I used <strong>strings challenge.pcapng | grep flag</strong>.After using the command I found something sus <strong>encflag{</strong> .
         To get the raw data I built a Python tool called <a href="/files/packet_reader.py" class="packet_reader">packet_reader.py</a>.After extracting all the raw data I fon the encflag <strong>encflag{\n\x1a\x06/\x07\x0e\x1e\x0e:\t\x10\x14\x03/\x05\x0e\x02\x0e\x0b\n\x1a\x16}'</strong>
         found the key in the same way <strong>key = suspcapkeyx</strong> use the decrypt.py to get the flag <strong>horizonCTF{you_done_pcap_forensic}</strong>
       </p>
       
 
         
-        <img src="/ctf_img/flag fing the hidden flag.png" alt="">
+        <img src="/ctf_img/flag fing the hidden flag.png" alt="" class="img-fluid" > 
     </section>
   </div>
 
