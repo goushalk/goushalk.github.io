@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CTF Write-ups</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/writeup.css">
   <link rel="stylesheet" href="/css/test.css">
+  <script src="https://kit.fontawesome.com/45717addd7.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header id="nav" class=" text-center py-4 container-fluid text-center">
@@ -56,23 +58,6 @@
 
     <section id="writeup2" class="mt-5">
       <h2 class="text-lime">Category: Forensic</h2>
-      <h2 class="text-lime">Challenge: education</h2>
-      <h3 class="text-lime">Challenge Description:</h3>
-      <p class="text-white">Study well and find the flag. Go advance.<br> Author: Goushal</p>
-      <img src="/ctf_img/saaaaaa.bmp" alt="" id="saaa" class="img-fluid">
-      <h3 class="text-lime">Solution:</h3>
-      <p class="text-white">It's a BMP file. I went through all the methods(basic) then I jumped to steg
-        tool called <strong>openstego</strong> it is used for Data Hiding: It can hide any data within a cover file (e.g. images) and also for extracting
-        hidden messages . After using the openstego tool there will file  called flag.txt if we read the file we will get the morse code <strong>.-  --. ..-.  --. .- .... 
-          --. ..--.-  .- .- -.. .- .- -..
-          </strong>  <p>
-            <img src="/ctf_img/morse code.png" class="img-fluid" alt="">
-    </section>
-
-    <hr class="new1">
-
-    <section id="writeup2" class="mt-5">
-      <h2 class="text-lime">Category: Forensic</h2>
       <h2 class="text-lime">Challenge: Finding the Hidden Flag</h2>
       <h3 class="text-lime">Challenge Description:</h3>
       <p class="text-white">Analyze the provided pcap file to find the hidden encflag. The flag 
@@ -82,30 +67,165 @@
         Author- Abishek
       <br>
       Files: challenge.pcapng , decrypt.py
-</p>
+      </p>
       <!-- <img src="/ctf_img/saaaaaa.bmp" alt="" id="saaa" class="img-fluid"> -->
       <h3 class="text-lime">Solution:</h3>
       <p class="text-white">
-        After opening the challenge.pcapng file using <a href="https://www.wireshark.org/" class="sec_a">wireshark</a> there was over 2000+ packets 
-        but still I went through few packets I got a fake flag <strong>flag{m6yb3_i_am_the_Fl4g}</strong>
-      <p>
+        After opening the challenge.pcapng file using <a href="https://www.wireshark.org/" class="sec_a">Wireshark</a> there were over 2000+ packets 
+        but still I went through a few packets and got a fake flag <strong>flag{m6yb3_i_am_the_Fl4g}</strong>
+      </p>
       <img src="/ctf_img/wireshark.png" alt="" class="img-fluid" style="height: 526px; width: 1062px;">
       <p class="text-white">
-        In the description its given that they have encrypted it in XOR in terminal I used <strong>strings challenge.pcapng | grep flag</strong>.After using the command I found something sus <strong>encflag{</strong> .
-        To get the raw data I built a Python tool called <a href="/files/packet_reader.py" class="packet_reader">packet_reader.py</a>.After extracting all the raw data I fon the encflag <strong>encflag{\n\x1a\x06/\x07\x0e\x1e\x0e:\t\x10\x14\x03/\x05\x0e\x02\x0e\x0b\n\x1a\x16}'</strong>
-        found the key in the same way <strong>key = suspcapkeyx</strong> use the decrypt.py to get the flag <strong>horizonCTF{you_done_pcap_forensic}</strong>
+        In the description, it is given that they have encrypted it in XOR. In the terminal, I used <strong>strings challenge.pcapng | grep flag</strong>. After using the command, I found something suspicious <strong>encflag{</strong>.
+        To get the raw data, I built a Python tool called Packet_reader. After extracting all the raw data, I found the encflag <strong>encflag{\n\x1a\x06/\x07\x0e\x1e\x0e:\t\x10\x14\x03/\x05\x0e\x02\x0e\x0b\n\x1a\x16}</strong>
+        and found the key in the same way <strong>key = suspcapkeyx</strong>. Use the decrypt.py to get the flag <strong>horizonCTF{you_done_pcap_forensic}</strong>.
       </p>
-      
+      <img src="/ctf_img/flag_finding_the_hidden_flag.png" alt="" class="img-fluid">
+    </section>
+    <a href="/files/packet_reader.py" class="fa fa-download fa-2x text-center" style="text-decoration: none; padding: 10px;"> packet_reader.py</a>
+    <hr class="new1"> 
 
-        
-        <img src="/ctf_img/flag fing the hidden flag.png" alt="" class="img-fluid" > 
+    <section id="writeup2" class="mt-5">
+      <h2 class="text-lime">Category: Forensic</h2>
+      <h2 class="text-lime">Challenge: stegloop</h2>
+      <h3 class="text-lime">Challenge Description:</h3>
+      <p class="text-white">
+        Alice knows that the flag is hidden inside the image and there is a bunch of passwords in a list. Would you help Alice find the flag?<br>
+        Files: artic.jpg, wordlist.txt
+      </p>
+      <img src="/ctf_img/artic.jpg" class="img-fluid" alt="">
+      <h3 class="text-lime">Solution:</h3>
+      <p class="text-white">
+       In the description, I saw a <strong>bunch of passwords and a wordlist.txt in the given files</strong>. As soon as I saw that,
+       I knew that this was a <strong>stegcrack</strong> challenge. I used <a href="https://www.kali.org/tools/stegcracker/" target="_blank">stegcracker</a>
+       and with the help of the tool, I cracked the password using the command <strong>stegcracker artic.jpg wordlist.txt -V -o flag.txt</strong>.
+      </p>
+      <img src="/ctf_img/stegcracker.png" alt="" class="img-fluid">
+      <p class="text-white">
+        After cracking the password, I found the flag <strong>horizonCTF{5t3g_4r3_50_fun}</strong>.
+      </p>
+      <hr class="new1">
+    </section>
+
+    <section id="writeup2" class="mt-5">
+      <h2 class="text-lime">Category: Reversing</h2>
+      <h2 class="text-lime">Challenge: javafuck</h2>
+      <h3 class="text-lime">Challenge Description:</h3>
+      <p class="text-white">
+        java java javascript <br>
+        Author <a href="https://h4x5p4c3.github.io/">jones</a> <br>
+        Files: 1.html
+      </p>
+      <h3 class="text-lime">Solution:</h3>
+      <code>
+        // Obfuscated function to handle the password verification<br>
+        (function(array, times) {<br>
+            const rotateArray = function(count) {<br>
+                while (--count) {<br>
+                    array.push(array.shift());<br>
+                }<br>
+            };<br>
+            rotateArray(++times);<br>
+        }(_0x59d7, 0x15f));<br><br>
+        const _0x3c9f = function(index, shift) {<br>
+            index = index - 0x0;  // Normalize the index<br>
+            let value = _0x59d7[index];<br>
+            return value;<br>
+        };<br><br>
+        const _0x59d7 = [<br>
+            '0x13f', 'value', 'getElementById', <br>
+            'Correct password! Flag:', 'Incorrect password', <br>
+            'pwd', 'map', 'charCodeAt', 'length', <br>
+            'from', 'filter', 'push', 'shift', 'while', 'return' <br>
+        ];<br><br>
+        function xtsca() {<br>
+            const getValueById = _0x3c9f;<br>
+            const correctPassword = [<br>
+                104, 111, 114, 105,  // 'hori'<br>
+                122, 111, 110,       // 'zon'<br>
+                123, 100, 101,       // '{de'<br>
+                51, 109, 95,         // '3m_'<br>
+                99, 48, 48, 108,     // 'c00l'<br>
+                125                 // '}'<br>
+            ];<br><br>
+            const enteredPassword = document[getValueById('0x2')]('pwd')[getValueById('0x1')];<br>
+            const enteredPasswordCodes = Array[getValueById('0x8')](enteredPassword).map(ch => ch.charCodeAt(0));<br><br>
+            if (enteredPasswordCodes.length !== correctPassword.length) {<br>
+                alert(getValueById('0x4'));  // 'Incorrect password'<br>
+                return;<br>
+            }<br><br>
+            for (let i = 0; i < enteredPasswordCodes.length; i++) {<br>
+                if (enteredPasswordCodes[i] !== correctPassword[i]) {<br>
+                    alert(getValueById('0x4'));  // 'Incorrect password'<br>
+                    return;<br>
+                }<br>
+            }<br><br>
+            alert(getValueById('0x3'));  // 'Correct password! Flag:'<br>
+        }<br>
+    </code>
+    
+      <p class="text-white">
+        When opening the <strong>1.html</strong> file, I saw that the one function and had a keyword <strong>flag</strong>  and was entirely obfuscated.  After analyzing and deobfuscating 
+        the code, I found that the password was a string of characters that corresponded to ASCII values <br>
+        deobfuscated code:
+      </p>
+      <code>
+        const rotateArray = function(array, count) {<br>
+            while (--count) {<br>
+                array.push(array.shift());<br>
+            }<br>
+        };<br><br>
+        const _0x59d7 = [<br>
+            '0x13f', 'value', 'getElementById',<br>
+            'Correct password! Flag:', 'Incorrect password',<br>
+            'pwd', 'map', 'charCodeAt', 'length',<br>
+            'from', 'filter', 'push', 'shift', 'while', 'return'<br>
+        ];<br><br>
+        rotateArray(_0x59d7, 0x15f);<br><br>
+        const _0x3c9f = function(index) {<br>
+            index = index - 0x0; // Normalize the index<br>
+            return _0x59d7[index];<br>
+        };<br><br>
+        function xtsca() {<br>
+            const getValueById = _0x3c9f;<br>
+            const correctPassword = [<br>
+                104, 111, 114, 105,  // 'hori'<br>
+                122, 111, 110,       // 'zon'<br>
+                123, 100, 101,       // '{de'<br>
+                51, 109, 95,         // '3m_'<br>
+                99, 48, 48, 108,     // 'c00l'<br>
+                125                 // '}'<br>
+            ];<br><br>
+            const enteredPassword = document.getElementById('pwd').value;<br>
+            const enteredPasswordCodes = Array.from(enteredPassword).map(ch => ch.charCodeAt(0));<br><br>
+            if (enteredPasswordCodes.length !== correctPassword.length) {<br>
+                alert('Incorrect password');<br>
+                return;<br>
+            }<br><br>
+            for (let i = 0; i < enteredPasswordCodes.length; i++) {<br>
+                if (enteredPasswordCodes[i] !== correctPassword[i]) {<br>
+                    alert('Incorrect password');<br>
+                    return;<br>
+                }<br>
+            }<br><br>
+            alert('Correct password! Flag:');<br>
+        }<br>
+    </code>
+    <p class="text-white">
+      the flag is :horizonCTF{de3m_c00l}
+    </p>
+      
+      <hr class="new1">
     </section>
   </div>
+  
 
+  
+    
   <footer class=" text-center py-3 mt-5">
     <p>© 2024 codemystqe</p>
   </footer>
-
+  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

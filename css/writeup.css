@@ -50,6 +50,15 @@ strong {
     height: auto;
 }
 
+.fa-download:hover{
+    color: red;
+}
+
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+
 /* navigation */
 #nav {
     padding: 15px 20px;
