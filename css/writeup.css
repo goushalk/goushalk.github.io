@@ -5,6 +5,7 @@ body {
 
 .text-lime {
     color: #00ff00;
+    font-family: monospace;
 }
 
 .bg-dark {
@@ -33,7 +34,8 @@ footer a:hover {
 }
 
 .text-white {
-    font-size: 1.6em !important;
+    font-size: 1.6em ;
+    font-family: monospace;
 }
 
 .text-lime{
@@ -124,3 +126,30 @@ hr.new1 {
     font-family: glitch;
     src: url(/fonts/GlitchGoblin-2O87v.ttf);
 }
+
+
+
+
+@media (max-width: 435px){
+    .fa-download{
+        font-size: 1em
+    }
+
+    #stegloop{
+        font-size: 1em;
+    }
+
+    strong{
+        font-size: 1em;
+    }
+
+    .text-lime{
+        font-size: 1.6em ;
+    }
+
+    .text-white{
+        font-size: 1.4em;
+    }
+}
+
+

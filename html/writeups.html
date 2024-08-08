@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,24 @@
   <link rel="stylesheet" href="/css/test.css">
   <script src="https://kit.fontawesome.com/45717addd7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header id="nav" class=" text-center py-4 container-fluid text-center">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="/html/home.html" style="font-family: android;">codemystqe</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-              <ul class="navbar-nav justify-content-end">
-                  <li class="nav-item"><a class="nav-link" href="/html/home.html">About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/html/projects.html">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/html/achivements.html">Certifications</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Writeups</a></li>
-              </ul>
-          </div>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/html/home.html" style="font-family: android;">codemystqe</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item"><a class="nav-link" href="/html/home.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/html/projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/html/achivements.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Writeups</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <div class="container mt-5" style="text-align: left;">
@@ -43,71 +46,107 @@
       </ul>
     </section> -->
 
+    <!--WRITE_UP 1 -->
+
     <section id="writeup1" class="mt-5">
       <h2 class="text-lime">Event: OWASP x Horizon</h2>
       <h2 class="text-lime">Category: Forensic</h2>
       <h2 class="text-lime">Challenge: corrupted</h2>
       <h3 class="text-lime">Challenge Description:</h3>
-      <p class="text-white">Alice sent the image to Bob but the image is corrupted, recover the original image and find the flag from the image.<br> Author - DIVAS</p>
+      <p class="text-white">Alice sent the image to Bob but the image is corrupted, recover the original image and find
+        the flag from the image.<br> Author - DIVAS</p>
       <h3 class="text-lime">Solution:</h3>
       <img src="/ctf_img/Screenshot from 2024-08-03 17-05-08.png" alt="" class="img-fluid">
-      <p class="text-white">This challenge is very easy. Before getting into any steg tool, I used <strong>strings</strong> to extract any string that had <strong>horizon</strong> in it and <strong>grepped</strong> it so that I could get the flag because the format of the flag is horizonCTF{}.</p>
+      <p class="text-white">This challenge is very easy. Before getting into any steg tool, I used
+        <strong>strings</strong> to extract any string that had <strong>horizon</strong> in it and
+        <strong>grepped</strong> it so that I could get the flag because the format of the flag is horizonCTF{}.
+      </p>
     </section>
 
     <hr class="new1">
+
+
+    <!--WRITE_UP 2 -->
+
+
 
     <section id="writeup2" class="mt-5">
       <h2 class="text-lime">Category: Forensic</h2>
       <h2 class="text-lime">Challenge: Finding the Hidden Flag</h2>
       <h3 class="text-lime">Challenge Description:</h3>
-      <p class="text-white">Analyze the provided pcap file to find the hidden encflag. The flag 
-        is encrypted with an XOR cipher and is located in a packet 
-        sent to port 12345. Decrypt the flag using the provided key and 
+      <p class="text-white">Analyze the provided pcap file to find the hidden encflag. The flag
+        is encrypted with an XOR cipher and is located in a packet
+        sent to port 12345. Decrypt the flag using the provided key and
         submit it in the format flag{...}.
         Author- Abishek
-      <br>
-      Files: challenge.pcapng , decrypt.py
+        <br>
+        Files: challenge.pcapng , decrypt.py
       </p>
       <!-- <img src="/ctf_img/saaaaaa.bmp" alt="" id="saaa" class="img-fluid"> -->
       <h3 class="text-lime">Solution:</h3>
       <p class="text-white">
-        After opening the challenge.pcapng file using <a href="https://www.wireshark.org/" class="sec_a">Wireshark</a> there were over 2000+ packets 
-        but still I went through a few packets and got a fake flag <strong>flag{m6yb3_i_am_the_Fl4g}</strong>
+        After opening the challenge.pcapng file using <a href="https://www.wireshark.org/" class="sec_a">Wireshark</a>
+        there were over 2000+ packets
+        but still I went through a few packets and got a fake flag : <br><code><strong>flag{m6yb3_i_am_the_Fl4g}</strong></code>
       </p>
       <img src="/ctf_img/wireshark.png" alt="" class="img-fluid" style="height: 526px; width: 1062px;">
       <p class="text-white">
-        In the description, it is given that they have encrypted it in XOR. In the terminal, I used <strong>strings challenge.pcapng | grep flag</strong>. After using the command, I found something suspicious <strong>encflag{</strong>.
-        To get the raw data, I built a Python tool called Packet_reader. After extracting all the raw data, I found the encflag <strong>encflag{\n\x1a\x06/\x07\x0e\x1e\x0e:\t\x10\x14\x03/\x05\x0e\x02\x0e\x0b\n\x1a\x16}</strong>
-        and found the key in the same way <strong>key = suspcapkeyx</strong>. Use the decrypt.py to get the flag <strong>horizonCTF{you_done_pcap_forensic}</strong>.
+        In the description, it is given that they have encrypted it in XOR. In the terminal, I used <strong>strings
+          challenge.pcapng | grep flag</strong>. After using the command, I found something suspicious
+        <strong>encflag{</strong>.
+        To get the raw data, I built a Python tool called Packet_reader. After extracting all the raw data, I found the
+        encflag <br>
+        <code
+          id="encflag"><strong>encflag{\n\x1a\x06/\x07\x0e\x1e\x0e:\t\x10\x14\x03/\x05\x0e\x02\x0e\x0b\n\x1a\x16}</strong></code>
+        and found the key in the same way <strong>key = suspcapkeyx</strong>. Use the decrypt.py to get the flag
+        <code><strong>horizonCTF{you_done_pcap_forensic}</strong></code>
       </p>
       <img src="/ctf_img/flag_finding_the_hidden_flag.png" alt="" class="img-fluid">
     </section>
-    <a href="/files/packet_reader.py" class="fa fa-download fa-2x text-center" style="text-decoration: none; padding: 10px;"> packet_reader.py</a>
-    <hr class="new1"> 
+    <a href="/files/packet_reader.py" class="fa fa-download fa-2x text-center"
+      style="text-decoration: none; padding: 10px;"> packet_reader.py</a>
 
-    <section id="writeup2" class="mt-5">
+
+
+    <hr class="new1">
+
+    <!--WRITE_UP 3 -->
+
+
+
+    <section id="writeup3" class="mt-5">
       <h2 class="text-lime">Category: Forensic</h2>
       <h2 class="text-lime">Challenge: stegloop</h2>
       <h3 class="text-lime">Challenge Description:</h3>
       <p class="text-white">
-        Alice knows that the flag is hidden inside the image and there is a bunch of passwords in a list. Would you help Alice find the flag?<br>
+        Alice knows that the flag is hidden inside the image and there is a bunch of passwords in a list. Would you help
+        Alice find the flag?<br>
         Files: artic.jpg, wordlist.txt
       </p>
       <img src="/ctf_img/artic.jpg" class="img-fluid" alt="">
       <h3 class="text-lime">Solution:</h3>
       <p class="text-white">
-       In the description, I saw a <strong>bunch of passwords and a wordlist.txt in the given files</strong>. As soon as I saw that,
-       I knew that this was a <strong>stegcrack</strong> challenge. I used <a href="https://www.kali.org/tools/stegcracker/" target="_blank">stegcracker</a>
-       and with the help of the tool, I cracked the password using the command <strong>stegcracker artic.jpg wordlist.txt -V -o flag.txt</strong>.
+        In the description, I saw a <strong>bunch of passwords and a wordlist.txt in the given files</strong>. As soon
+        as I saw that,
+        I knew that this was a <strong>stegcrack</strong> challenge. I used <a
+          href="https://www.kali.org/tools/stegcracker/" target="_blank">stegcracker</a>
+        and with the help of the tool, I cracked the password using the command : <br>
+        <code><strong>stegcracker artic.jpg wordlist.txt -V -o flag.txt</strong>.</code>
       </p>
+
       <img src="/ctf_img/stegcracker.png" alt="" class="img-fluid">
       <p class="text-white">
-        After cracking the password, I found the flag <strong>horizonCTF{5t3g_4r3_50_fun}</strong>.
+        After cracking the password, I found the flag
+        <code><strong id="stegloop">horizonCTF{5t3g_4r3_50_fun}</strong></code>
       </p>
       <hr class="new1">
     </section>
 
-    <section id="writeup2" class="mt-5">
+
+
+    <!--WRITE_UP 4 -->
+
+    <section id="writeup4" class="mt-5">
       <h2 class="text-lime">Category: Reversing</h2>
       <h2 class="text-lime">Challenge: javafuck</h2>
       <h3 class="text-lime">Challenge Description:</h3>
@@ -163,9 +202,10 @@
             alert(getValueById('0x3'));  // 'Correct password! Flag:'<br>
         }<br>
     </code>
-    
+
       <p class="text-white">
-        When opening the <strong>1.html</strong> file, I saw that the one function and had a keyword <strong>flag</strong>  and was entirely obfuscated.  After analyzing and deobfuscating 
+        After opening the <strong>1.html</strong> file, I saw that the one function and had a keyword
+        <strong>flag</strong> and was entirely obfuscated. After analyzing and deobfuscating
         the code, I found that the password was a string of characters that corresponded to ASCII values <br>
         deobfuscated code:
       </p>
@@ -211,23 +251,24 @@
             alert('Correct password! Flag:');<br>
         }<br>
     </code>
-    <p class="text-white">
-      the flag is :horizonCTF{de3m_c00l}
-    </p>
-      
+      <p class="text-white">
+        the flag is :horizonCTF{de3m_c00l}
+      </p>
+
       <hr class="new1">
     </section>
   </div>
-  
 
-  
-    
+
+
+
   <footer class=" text-center py-3 mt-5">
     <p>© 2024 codemystqe</p>
   </footer>
-  
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
