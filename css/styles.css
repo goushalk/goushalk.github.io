@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  color: #eee;
+  font-family: 'Audiowide', cursive;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #1e1e1e;
+}
+
+/* Navigation */
+#nav {
+  padding: 15px 20px;
+  text-align: center;
+  position: relative;
+}
+
+#nav .navbar-nav .nav-item .nav-link {
+  color: #eee;
+  transition: color 0.3s ease;
+  font-family: monospace;
+  font-size: 1em;
+  
+}
+
+#nav .navbar-nav .nav-item .nav-link:hover {
+  color: #0f0;
+}
+
+#nav .navbar-brand {
+  font-size: 2em;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+  font-family: monospace;
+  color: #eee;
+}
+
+#nav .navbar-brand:hover {
+  color: #0f0;
+  
+}
+
+
+.dropdown-item{
+  color: #eee !important;
+
+}
+
+.dropdown-item:hover{
+  background-color: #2b2b2b;
+  color: #0f0 !important;
+}
+
+/* #nav{
+  font-size: 1.5em;
+} */
+
+
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(103, 101, 101);
+}
+
+section h2 {
+  margin-top: 0;
+  font-family: monospace;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  text-shadow: #0f0 1px 1px 1px;
+}
+
+section p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  text-shadow: #0f0 0px 1px 1px;
+}
+
+/* Footer */
+.footer {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer .fa {
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 0 10px;
+  font-size: 1.5em;
+  filter:drop-shadow(0px 0px 5px rgb(245, 244, 244))}
+
+.footer .fa:hover {
+  color: #0f0;
+  font-size: 2em;
+  transition: 0.2s;
+  filter:drop-shadow(0px 0px 5px #0f0)
+}
+
+footer {
+  text-align: center;
+  font-family: monospace;
+  padding: 10px 0;
+}
+
+@font-face {
+  font-family: android;
+  src: url(/fonts/Android.ttf);
+ }
+ 
+ @font-face{
+  font-family: digital;
+  src: url(/fonts/digitative-1023.ttf);
+ }
+
+ @font-face {
+  font-family: syn;
+  src: url(/fonts/Syntachron-Bold.ttf);
+ }
+
+ @font-face {
+  font-family: bionical;
+  src: url(/fonts/BionicalDemo-8MJ5A.ttf);
+}
+
+@font-face {
+  font-family: lines;
+  src: url(/fonts/Exwayer-X3eqa.ttf);
+}
+
+@font-face {
+  font-family: glitch;
+  src: url(/fonts/GlitchGoblin-2O87v.ttf);
+}
+
+
+/* .fa-instagram{
+  color: red;
+} */
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #nav .navbar-brand {
+      font-size: 1.5em;
+  }
+
+  #nav .navbar-nav .nav-item .nav-link {
+      font-size: 1em;
+  }
+
+  section h2 {
+      font-size: 1.5em;
+  }
+
+  section p {
+      font-size: 1em;
+  }
+
+  .footer .fa {
+      font-size: 1.2em;
+  }
+
+ 
+}

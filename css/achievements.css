@@ -1,0 +1,461 @@
+body{
+    background-color: #1e1e1e;
+    background-attachment: fixed;
+}
+
+/* Navigation */
+#nav {
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  #nav .navbar-nav .nav-item .nav-link {
+    color: #eee;
+    transition: color 0.3s ease;
+    font-family: monospace;
+    font-size: 1em;
+    
+  }
+  
+  #nav .navbar-nav .nav-item .nav-link:hover {
+    color: #0f0;
+  }
+  
+  #nav .navbar-brand {
+    font-size: 2em;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    font-family: monospace;
+    color: #eee;
+  }
+  
+  #nav .navbar-brand:hover {
+    color: #0f0;
+    
+  }
+  
+  /* #nav{
+    font-size: 1.5em;
+  } */
+
+h2{
+    color: lime;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+img{
+    padding-left: 250px;
+    width: 1000;
+    height: 600;
+}
+
+p{
+    color: lime ;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+section {
+    padding: 5px;
+    margin: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(103, 101, 101); 
+}
+
+#texus{
+    height: 600px;
+    width: 1000px;
+}
+
+
+@font-face {
+    font-family: android;
+    src: url(/fonts/Android.ttf);
+   }
+   
+   @font-face{
+    font-family: digital;
+    src: url(/fonts/digitative-1023.ttf);
+   }
+  
+   @font-face {
+    font-family: syn;
+    src: url(/fonts/Syntachron-Bold.ttf);
+   }
+  
+   @font-face {
+    font-family: bionical;
+    src: url(/fonts/BionicalDemo-8MJ5A.ttf);
+  }
+  
+  @font-face {
+    font-family: lines;
+    src: url(/fonts/Exwayer-X3eqa.ttf);
+  }
+  
+  @font-face {
+    font-family: glitch;
+    src: url(/fonts/GlitchGoblin-2O87v.ttf);
+  }
+
+/* for mobiles of width px */
+
+@media (max-width: 430px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    .certs{
+        height: 200px;
+        width: 300px;
+        padding-left: 50px !important;
+    }
+}body{
+    background-color: #1e1e1e;
+    background-attachment: fixed;
+}
+
+/* Navigation */
+#nav {
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  #nav .navbar-nav .nav-item .nav-link {
+    color: #eee;
+    transition: color 0.3s ease;
+    font-family: monospace;
+    font-size: 1em;
+    
+  }
+  
+  #nav .navbar-nav .nav-item .nav-link:hover {
+    color: #0f0;
+  }
+  
+  #nav .navbar-brand {
+    font-size: 2em;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    font-family: monospace;
+    color: #eee;
+  }
+  
+  #nav .navbar-brand:hover {
+    color: #0f0;
+    
+  }
+  
+  /* #nav{
+    font-size: 1.5em;
+  } */
+
+h2{
+    color: lime;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+img{
+    padding-left: 250px;
+    width: 1000;
+    height: 600;
+}
+
+p{
+    color: lime ;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+section {
+    padding: 5px;
+    margin: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(103, 101, 101); 
+}
+
+#texus{
+    height: 600px;
+    width: 1000px;
+}
+
+
+@font-face {
+    font-family: android;
+    src: url(/fonts/Android.ttf);
+   }
+   
+   @font-face{
+    font-family: digital;
+    src: url(/fonts/digitative-1023.ttf);
+   }
+  
+   @font-face {
+    font-family: syn;
+    src: url(/fonts/Syntachron-Bold.ttf);
+   }
+  
+   @font-face {
+    font-family: bionical;
+    src: url(/fonts/BionicalDemo-8MJ5A.ttf);
+  }
+  
+  @font-face {
+    font-family: lines;
+    src: url(/fonts/Exwayer-X3eqa.ttf);
+  }
+  
+  @font-face {
+    font-family: glitch;
+    src: url(/fonts/GlitchGoblin-2O87v.ttf);
+  }
+
+/* for mobiles of width px */
+
+@media (max-width: 430px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    .certs{
+        height: 200px;
+        width: 300px;
+        padding-left: 50px !important;
+    }
+}body{
+    background-color: #1e1e1e;
+    background-attachment: fixed;
+}
+
+/* Navigation */
+#nav {
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  #nav .navbar-nav .nav-item .nav-link {
+    color: #eee;
+    transition: color 0.3s ease;
+    font-family: monospace;
+    font-size: 1em;
+    
+  }
+  
+  #nav .navbar-nav .nav-item .nav-link:hover {
+    color: #0f0;
+  }
+  
+  #nav .navbar-brand {
+    font-size: 2em;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    font-family: monospace;
+    color: #eee;
+  }
+  
+  #nav .navbar-brand:hover {
+    color: #0f0;
+    
+  }
+  
+  /* #nav{
+    font-size: 1.5em;
+  } */
+
+h2{
+    color: lime;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+img{
+    padding-left: 250px;
+    width: 1000;
+    height: 600;
+}
+
+p{
+    color: lime ;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+section {
+    padding: 5px;
+    margin: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(103, 101, 101); 
+}
+
+#texus{
+    height: 600px;
+    width: 1000px;
+}
+
+
+@font-face {
+    font-family: android;
+    src: url(/fonts/Android.ttf);
+   }
+   
+   @font-face{
+    font-family: digital;
+    src: url(/fonts/digitative-1023.ttf);
+   }
+  
+   @font-face {
+    font-family: syn;
+    src: url(/fonts/Syntachron-Bold.ttf);
+   }
+  
+   @font-face {
+    font-family: bionical;
+    src: url(/fonts/BionicalDemo-8MJ5A.ttf);
+  }
+  
+  @font-face {
+    font-family: lines;
+    src: url(/fonts/Exwayer-X3eqa.ttf);
+  }
+  
+  @font-face {
+    font-family: glitch;
+    src: url(/fonts/GlitchGoblin-2O87v.ttf);
+  }
+
+/* for mobiles of width px */
+
+@media (max-width: 430px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    .certs{
+        height: 200px;
+        width: 300px;
+        padding-left: 50px !important;
+    }
+}body{
+    background-color: #1e1e1e;
+    background-attachment: fixed;
+}
+
+/* Navigation */
+#nav {
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  #nav .navbar-nav .nav-item .nav-link {
+    color: #eee;
+    transition: color 0.3s ease;
+    font-family: monospace;
+    font-size: 1em;
+    
+  }
+  
+  #nav .navbar-nav .nav-item .nav-link:hover {
+    color: #0f0;
+  }
+  
+  #nav .navbar-brand {
+    font-size: 2em;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    font-family: monospace;
+    color: #eee;
+  }
+  
+  #nav .navbar-brand:hover {
+    color: #0f0;
+    
+  }
+  
+  /* #nav{
+    font-size: 1.5em;
+  } */
+
+h2{
+    color: lime;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+img{
+    padding-left: 250px;
+    width: 1000;
+    height: 600;
+}
+
+p{
+    color: lime ;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+section {
+    padding: 5px;
+    margin: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(103, 101, 101); 
+}
+
+#texus{
+    height: 600px;
+    width: 1000px;
+}
+
+
+@font-face {
+    font-family: android;
+    src: url(/fonts/Android.ttf);
+   }
+   
+   @font-face{
+    font-family: digital;
+    src: url(/fonts/digitative-1023.ttf);
+   }
+  
+   @font-face {
+    font-family: syn;
+    src: url(/fonts/Syntachron-Bold.ttf);
+   }
+  
+   @font-face {
+    font-family: bionical;
+    src: url(/fonts/BionicalDemo-8MJ5A.ttf);
+  }
+  
+  @font-face {
+    font-family: lines;
+    src: url(/fonts/Exwayer-X3eqa.ttf);
+  }
+  
+  @font-face {
+    font-family: glitch;
+    src: url(/fonts/GlitchGoblin-2O87v.ttf);
+  }
+
+/* for mobiles of width px */
+
+@media (max-width: 430px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    .certs{
+        height: 200px;
+        width: 300px;
+        padding-left: 50px !important;
+    }
+}
