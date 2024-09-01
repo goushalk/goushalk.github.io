@@ -24,6 +24,13 @@ body {
     top: 20%;
 }
 
+#arrow{
+    color: rgb(30, 30, 30);
+    bottom: 0;
+    display: block;
+    position: absolute;
+    top: 30%;
+}
 
 #left-side {
     background-color: rgb(30, 30, 30);
