@@ -1,6 +1,7 @@
 body{
     background-color: #1e1e1e;
     background-attachment: fixed;
+    cursor: crosshair;
 }
 
 /* Navigation */
