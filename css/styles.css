@@ -19,12 +19,15 @@ body {
   color: #eee;
   transition: color 0.3s ease;
   font-family: monospace;
-  font-size: 1em;
+  font-size: 1.2em;
+  transition: 0.3s;
   
 }
 
 #nav .navbar-nav .nav-item .nav-link:hover {
   color: #0f0;
+  font-size: 1.4em;
+  transition: 0.3s;
 }
 
 #nav .navbar-brand {
@@ -90,6 +93,7 @@ section p {
   color: whitesmoke;
   margin: 0 10px;
   font-size: 1.5em;
+  transition: 0.2s;
   filter:drop-shadow(0px 0px 5px rgb(245, 244, 244))}
 
 .footer .fa:hover {
