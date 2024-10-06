@@ -1,6 +1,6 @@
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     cursor: crosshair;
 }
 
@@ -10,14 +10,27 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* background: linear-gradient(41deg, rgba(138,138,142,1) 0%, rgba(70,70,71,1) 20%, rgba(0,0,0,1) 50%, rgba(85,82,82,1) 78%, rgba(199,200,200,1) 100%); */
+    /* background: linear-gradient(41deg, rgba(255,255,255,1) 0%, rgba(216,216,226,1) 29%, rgba(5,252,21,1) 50%, rgba(223,222,222,1) 77%, rgba(242,246,246,1) 97%);  */
+    /* background: linear-gradient(41deg, rgba(255,255,255,1) 0%, rgba(216,216,226,1) 34%, rgba(5,252,21,1) 50%, rgba(223,222,222,1) 66%, rgba(242,246,246,1) 97%);  */
+       /* background-image: linear-gradient(225deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+       /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       background: linear-gradient(to left,#000000 20%, #878787 70%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: 200% 200%;
+    animation: bars 10s ease-in-out infinite;
 }
 
 #left-side, #right-side {
-    width: 60%;
+    width: 50%; /* Keep it consistent to avoid splits */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.4s ease-in-out;
 }
 
-
-#path{
+#path {
     color: lime;
     bottom: 0;
     display: block;
@@ -25,21 +38,12 @@ body {
     top: 20%;
 }
 
-#arrow{
+#arrow {
     color: rgb(30, 30, 30);
     bottom: 0;
     display: block;
     position: absolute;
     top: 30%;
-}
-
-#left-side {
-    background-color: rgb(30, 30, 30);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: monospace;
 }
 
 #left-side a {
@@ -48,39 +52,20 @@ body {
     font-family: android;
     color: lime;
     text-decoration: none;
-    /* text-shadow: 0px 0px 0px rgb(0, 225, 0); */
+    text-shadow: 0px 0px 0px rgb(0, 225, 0);
 }
 
-.flash {
-    -webkit-animation: flash linear 1s infinite;
-    animation: flash linear 1s infinite;
-}
-
-@-webkit-keyframes flash {
-    0% { opacity: 1; } 
-    50% { opacity: .1; } 
-    100% { opacity: 1; }
-}
-@keyframes flash {
-    0% { opacity: 1; } 
-    50% { opacity: .1; } 
-    100% { opacity: 1; }
-}
-
-.pulseit {
-    -webkit-animation: pulse linear .5s infinite;
-    animation: pulse linear .5s infinite;
-}
-
-@-webkit-keyframes pulse {
-    0% { width:200px; } 
-    50% { width:340px; } 
-    100% { width:200px; }
-}
-@keyframes pulse {
-    0% { width:200px; } 
-    50% { width:340px; } 
-    100% { width:200px; }
+/* Animation for the entire background */
+@keyframes bars {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%; /* Moves the background fully */
+    }
+    100% {
+        background-position: 0% 50%; /* Moves it back to the start */
+    }
 }
 
 #left-side a:hover {
@@ -88,17 +73,8 @@ body {
     text-shadow: 0px 0px 8px rgb(247, 250, 247);
 }
 
-#right-side {
-    padding: 100px;
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #right-side p {
-    color: rgb(0, 0, 0);
+    color: rgb(242, 239, 239);
     font-size: 20px;
     font-family: monospace;
     font-weight: bold;
@@ -109,6 +85,8 @@ body {
     text-decoration: none;
     font-weight: bolder;
 }
+
+
 
 @font-face {
     font-family: bionical;
@@ -129,6 +107,9 @@ body {
     font-family: android;
     src: url(/fonts/Android.ttf);
 }
+
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
