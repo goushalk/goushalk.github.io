@@ -79,7 +79,11 @@ section h2 {
 section p {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2em;
-  text-shadow: #0f0 0px 1px 1px;
+  /* text-shadow: #0f0 0px 1px 1px; */
+  background: linear-gradient(65deg, rgba(2,239,2,1) 30%, rgb(163, 246, 168) 70%); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Footer */
