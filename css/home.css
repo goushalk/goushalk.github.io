@@ -152,7 +152,7 @@ body {
 
     #container {
         flex-direction: column;
-        overflow-y: scroll; !important
+        overflow-y: scroll !important;
     }
 
     #left-side, #right-side {
