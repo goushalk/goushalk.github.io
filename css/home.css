@@ -148,11 +148,11 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-
+   
 
     #container {
         flex-direction: column;
-        overflow-y: scroll;
+        overflow-y: scroll; !important
     }
 
     #left-side, #right-side {
