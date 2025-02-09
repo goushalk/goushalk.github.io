@@ -14,7 +14,34 @@
     <title>codemystiqe.sh</title>
 </head>
 <body>
+    
+
     <div id="container" style="overflow-y: scroll;">
+        <audio id="bg-music" loop>
+            <source src="/assets/music/electronica-perc-mix-91322.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <button id="play-button">
+            <!-- <img src="/svg/play.svg" alt="">     -->
+            >>>
+        </button>
+        
+        <script>
+            let audio = document.getElementById("bg-music");
+            let playButton = document.getElementById("play-button");
+        
+            playButton.addEventListener("click", function() {
+                if (audio.paused) {
+                    audio.play();
+                    playButton.textContent = "||";
+                } else {
+                    audio.pause();
+                    playButton.textContent = ">";
+                }
+            });
+        </script>
+        
     <div class="container" id="left-side" style="margin-left: 0%;">
         <h1 href="/html/home.html" class="flash gradient" style="font-family: mincraft; animation-delay:0.6s; font-size: 4rem;">0 p 1 1 r</h1>
         <p class="paths" id="path">
