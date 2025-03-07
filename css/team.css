@@ -1,0 +1,167 @@
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    cursor: crosshair;
+}
+
+.text-lime {
+    color: #00ff00;
+    font-family: monospace;
+}
+
+.bg-dark {
+    background-color: #1e1e1e !important;
+}
+
+.btn-lime {
+    background-color: #00ff00;
+    color: #121212;
+}
+
+a {
+    color: #00ff00;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: #00ff00;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.text-white {
+    font-size: 1.6em ;
+    font-family: monospace;
+}
+
+.text-lime{
+    font-size: 2.2em;
+}
+
+strong {
+    color: red;
+}
+
+#saaa {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.fa-download:hover{
+    color: red;
+}
+
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+/* navigation */
+#nav {
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+    background-color: #121212;
+}
+
+#nav .navbar-nav .nav-item .nav-link {
+    color: #eee;
+    transition: color 0.3s ease;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+#nav .navbar-nav .nav-item .nav-link:hover {
+    color: #0f0;
+}
+
+#nav .navbar-brand {
+    font-size: 2em;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    font-family: monospace;
+    color: #eee;
+}
+
+#nav .navbar-brand:hover {
+    color: #0f0;
+}
+
+.dropdown-item{
+    color: #eee !important;
+
+}
+
+.dropdown-item:hover{
+    background-color: #2b2b2b;
+    color: #0f0 !important;
+}
+hr.new1 {
+    border-top: 2px solid rgb(255, 0, 0);
+  }
+  
+
+@font-face {
+    font-family: android;
+    src: url(/fonts/Android.ttf);
+}
+
+@font-face {
+    font-family: digital;
+    src: url(/fonts/digitative-1023.ttf);
+}
+
+@font-face {
+    font-family: syn;
+    src: url(/fonts/Syntachron-Bold.ttf);
+}
+
+@font-face {
+    font-family: bionical;
+    src: url(/fonts/BionicalDemo-8MJ5A.ttf);
+}
+
+@font-face {
+    font-family: lines;
+    src: url(/fonts/Exwayer-X3eqa.ttf);
+}
+
+@font-face {
+    font-family: glitch;
+    src: url(/fonts/GlitchGoblin-2O87v.ttf);
+}
+
+@media (max-width: 435px){
+    .fa-download{
+        font-size: 1em
+    }
+
+    #stegloop{
+        font-size: 1em;
+    }
+
+    strong{
+        font-size: 1em;
+    }
+
+    .text-lime{
+        font-size: 1.6em ;
+    }
+
+    .text-white{
+        font-size: 1.4em;
+    }
+}
+
+/* Add this CSS to make the video fit the screen */
+video {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+}
