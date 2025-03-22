@@ -149,13 +149,20 @@ body {
 
 @font-face {
     font-family: mincraft;
-    src: url(/fonts//mincraft/MinecraftBold-nMK1.otf);
+    src: url(/fonts/mincraft/MinecraftBold-nMK1.otf);
 }
 
 @font-face {
     font-family: problem;
     src: url(/fonts/mincraft/Minecraftchmc-dBlX.ttf);
 }
+
+
+@font-face {
+    font-family: hindi;
+    src: url(/fonts/SAMAN___.ttf);
+  }
+
 
 /* @font-face {
     font-family: minecraft;

@@ -136,6 +136,13 @@ hr.new1 {
     src: url(/fonts/GlitchGoblin-2O87v.ttf);
 }
 
+
+@font-face {
+    font-family: hindi;
+    src: url(/fonts/SAMAN___.ttf);
+  }
+
+
 @media (max-width: 435px){
     .fa-download{
         font-size: 1em
