@@ -137,6 +137,11 @@ hr.new1 {
 }
 
 
+@font-face {
+    font-family: hindi;
+    src: url(/fonts/SAMAN___.ttf);
+  }
+
 
 
 @media (max-width: 435px){

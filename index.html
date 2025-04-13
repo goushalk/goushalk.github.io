@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google-adsense-account" content="ca-pub-1134816567959410">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="x-icon" href="/images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,9 +15,36 @@
     <title>codemystiqe.sh</title>
 </head>
 <body>
+    
+
     <div id="container" style="overflow-y: scroll;">
+        <audio id="bg-music" loop>
+            <source src="/assets/music/electronica-perc-mix-91322.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <button style="color: white;" id="play-button">
+            <!-- <img src="/svg/play.svg" alt="">     -->
+            >>>
+        </button>
+        
+        <script>
+            let audio = document.getElementById("bg-music");
+            let playButton = document.getElementById("play-button");
+        
+            playButton.addEventListener("click", function() {
+                if (audio.paused) {
+                    audio.play();
+                    playButton.textContent = "||";
+                } else {
+                    audio.pause();
+                    playButton.textContent = ">";
+                }
+            });
+        </script>
+        
     <div class="container" id="left-side" style="margin-left: 0%;">
-        <h1 href="/html/home.html" class="flash gradient" style="font-family: mincraft; animation-delay:0.6s; font-size: 4rem;">0 p 1 1 r</h1>
+        <h1 href="/html/home.html" class="flash gradient" style="font-family: mincraft; animation-delay:0.6s; font-size: 4rem;">JellyBean</h1>
         <p class="paths" id="path">
             find the secrete path ;) <br><br>
         </p>
@@ -27,8 +55,8 @@
     
     <div class="container content" id="right-side">
         <p style="font-family: problem; font-size: 2em;" class="text-center ">
-            <strong style="font-family: problem;">Hey There!</strong> <br>    
-            I'm Goushal aka <a href="">[0p11r]</a> <a id="emoji" href="/html/home.html">👋</a> a student at <a id="sist" href="https://www.sathyabama.ac.in/">SIST</a>.
+            <strong style="font-family: mincraft;">Hey There!</strong> <br>    
+            I'm Goushal aka <a href="">[JellyBean]</a> <a id="emoji" href="/html/home.html">👋</a> a student at <a id="sist" href="https://www.sathyabama.ac.in/">SIST</a>.
             I am a passionate CTF🚩player , cybersecurity enthusiast and little bit of frontend too. 
             As a member of the OWASP technical team at Sathyabama Student Chapter,
             I actively engage in various cybersecurity initiatives and challenges.
