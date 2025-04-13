@@ -18,7 +18,7 @@ body {
 #nav .navbar-nav .nav-item .nav-link {
   color: #eee;
   transition: color 0.3s ease;
-  font-family: monospace;
+  font-family: mincraft;
   font-size: 1.2em;
   transition: 0.3s;
   
@@ -32,7 +32,7 @@ body {
 
 #nav .navbar-brand {
   font-size: 2em;
-  text-shadow: 0 0 5px rgb(255, 255, 255);
+  text-shadow: 0 0 3px rgb(255, 255, 255);
   font-family: monospace;
   color: #eee;
 }
@@ -78,15 +78,15 @@ section {
 
 section h2 {
   margin-top: 0;
-  font-family: monospace;
-  font-size: 1.5em;
+  font-family: mincraft;
+  font-size: 1.3em;
   color: rgb(255, 255, 255);
-  text-shadow: #0f0 1px 1px 1px;
+  /* text-shadow: #0f0 1px 1px 1px; */
 }
 
 section p {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.2em;
+  font-family: problem;
+  font-size: 1.8em;
   /* text-shadow: #0f0 0px 1px 1px; */
   background: linear-gradient(65deg, rgba(2,239,2,1) 30%, rgb(163, 246, 168) 70%); 
   -webkit-background-clip: text;
@@ -149,6 +149,16 @@ footer {
 @font-face {
   font-family: glitch;
   src: url(/fonts/GlitchGoblin-2O87v.ttf);
+}
+
+@font-face {
+  font-family: mincraft;
+  src: url(/fonts//mincraft/MinecraftBold-nMK1.otf);
+}
+
+@font-face {
+  font-family: problem;
+  src: url(/fonts/mincraft/Minecraftchmc-dBlX.ttf);
 }
 
 
