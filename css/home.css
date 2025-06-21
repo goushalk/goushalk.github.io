@@ -22,7 +22,8 @@ body {
     background-size: 155% 155%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-size: cover; */
+    background-size: cover;
+    background-position: center;
     animation: bars 5s ease-in-out infinite;
 }
 
@@ -32,7 +33,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #path {
@@ -101,6 +102,9 @@ body {
     color: rgb(242, 239, 239);
     font-size: 20px;
     font-weight: lighter;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 
@@ -172,35 +176,99 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-   
-
     #container {
         flex-direction: column;
-        overflow-y: scroll !important;
+        overflow-y: auto !important;
+        height: auto;
+        min-height: 100vh;
     }
 
     #left-side, #right-side {
         width: 100%;
-    }
-
-    #left-side {
-        height: 50%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #right-side {
-        height: 50%;
         padding: 20px;
     }
 
+    #left-side {
+        height: auto;
+        min-height: 40vh;
+        margin: 0;
+        padding-top: 40px;
+    }
+
+    #right-side {
+        height: auto;
+        min-height: 60vh;
+        padding: 20px;
+    }
+
+    #left-side h1 {
+        font-size: 3rem !important;
+    }
+
     #left-side a {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     #right-side p {
         font-size: 16px;
         text-align: center;
-        padding: 0;
+        padding: 0 15px;
+        line-height: 1.6;
     }
+
+    #play-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #left-side h1 {
+        font-size: 2.5rem !important;
+    }
+
+    #right-side p {
+        font-size: 14px;
+    }
+
+    #left-side a {
+        font-size: 20px;
+    }
+}
+
+/* Improve button styling */
+#play-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#play-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+/* Improve text readability */
+#right-side p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Add smooth transitions */
+#left-side, #right-side {
+    transition: all 0.3s ease-in-out;
 }

@@ -105,6 +105,10 @@ hr.new1 {
     border-top: 2px solid rgb(255, 0, 0);
   }
   
+.thick {
+    font-weight: bold;
+}
+
 
 @font-face {
     font-family: android;
@@ -143,32 +147,3 @@ hr.new1 {
   }
 
 
-@media (max-width: 435px){
-    .fa-download{
-        font-size: 1em
-    }
-
-    #stegloop{
-        font-size: 1em;
-    }
-
-    strong{
-        font-size: 1em;
-    }
-
-    .text-lime{
-        font-size: 1.6em ;
-    }
-
-    .text-white{
-        font-size: 1.4em;
-    }
-}
-
-/* Add this CSS to make the video fit the screen */
-video {
-    width: 100%;
-    height: auto;
-    max-height: 100vh;
-    object-fit: cover;
-}
